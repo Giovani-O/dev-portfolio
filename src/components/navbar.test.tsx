@@ -1,7 +1,7 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { I18nextProvider } from 'react-i18next'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { Navbar } from '../components/Navbar'
+import { Navbar } from '../components/navbar'
 import i18n from '../i18n'
 
 class MockIntersectionObserver {
