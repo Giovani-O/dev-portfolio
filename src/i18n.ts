@@ -5,6 +5,8 @@ import enCommon from '../locales/en/common.json';
 import ptCommon from '../locales/pt/common.json';
 import enHero from '../locales/en/hero.json';
 import ptHero from '../locales/pt/hero.json';
+import enSkills from '../locales/en/skills.json';
+import ptSkills from '../locales/pt/skills.json';
 
 function getInitialLanguage(): string {
   const stored = localStorage.getItem('@dev-portfolio-lang');
@@ -18,8 +20,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: { translation: { ...enCommon, ...enHero } },
-      pt: { translation: { ...ptCommon, ...ptHero } },
+      en: { translation: { ...enCommon, ...enHero, ...enSkills } },
+      pt: { translation: { ...ptCommon, ...ptHero, ...ptSkills } },
     },
     lng: getInitialLanguage(),
     fallbackLng: 'en',

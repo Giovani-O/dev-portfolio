@@ -1,0 +1,66 @@
+{
+  "skills": {
+    "label": "Skills",
+    "title": "Technical Arsenal",
+    "subtitle": "Tools and technologies I work with daily to build robust, scalable applications.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "subtitle": "UI & Interfaces",
+        "skills": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tanstack",
+          "React Hook Form",
+          "Tailwind CSS",
+          "Zustand",
+          "Vue"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "subtitle": "APIs & Services",
+        "skills": [
+          "Node.js",
+          "Fastify",
+          "NestJS",
+          "Prisma ORM",
+          "Drizze ORM",
+          "TypeScript",
+          "Vitest",
+          ".NET (C#)",
+          "xUnit"
+        ]
+      },
+      "database": {
+        "title": "Database",
+        "subtitle": "Data & Caching",
+        "skills": ["PostgreSQL", "SQL Server", "MySQL", "MongoDB"]
+      },
+      "devops": {
+        "title": "DevOps",
+        "subtitle": "Deploy & Scale",
+        "skills": ["Docker", "AWS", "CI/CD"]
+      },
+      "tooling": {
+        "title": "Tooling",
+        "subtitle": "Workflow & Editor",
+        "skills": [
+          "Zed",
+          "Git",
+          "Linux",
+          "OpenCode",
+          "AI",
+          "Claude Code",
+          "GitHub Copilot"
+        ]
+      },
+      "practices": {
+        "title": "Practices",
+        "subtitle": "Methods & Mindset",
+        "skills": ["TDD", "DDD", "Agile", "Clean Architecture", "SOLID"]
+      }
+    }
+  }
+}

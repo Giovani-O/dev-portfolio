@@ -1,0 +1,66 @@
+{
+  "skills": {
+    "label": "Habilidades",
+    "title": "Arsenal Técnico",
+    "subtitle": "Ferramentas e tecnologias com as quais trabalho diariamente para construir aplicações robustas e escaláveis.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "subtitle": "UI & Interfaces",
+        "skills": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tanstack",
+          "React Hook Form",
+          "Tailwind CSS",
+          "Zustand",
+          "Vue"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "subtitle": "APIs & Serviços",
+        "skills": [
+          "Node.js",
+          "Fastify",
+          "NestJS",
+          "Prisma ORM",
+          "Drizze ORM",
+          "TypeScript",
+          "Vitest",
+          ".NET (C#)",
+          "xUnit"
+        ]
+      },
+      "database": {
+        "title": "Banco de Dados",
+        "subtitle": "Dados & Cache",
+        "skills": ["PostgreSQL", "SQL Server", "MySQL", "MongoDB"]
+      },
+      "devops": {
+        "title": "DevOps",
+        "subtitle": "Deploy & Escala",
+        "skills": ["Docker", "AWS", "CI/CD"]
+      },
+      "tooling": {
+        "title": "Ferramentas",
+        "subtitle": "Workflow & Editor",
+        "skills": [
+          "Zed",
+          "Git",
+          "Linux",
+          "OpenCode",
+          "IA",
+          "Claude Code",
+          "GitHub Copilot"
+        ]
+      },
+      "practices": {
+        "title": "Práticas",
+        "subtitle": "Métodos & Mentalidade",
+        "skills": ["TDD", "DDD", "Agile", "Clean Architecture", "SOLID"]
+      }
+    }
+  }
+}
