@@ -99,7 +99,7 @@ export function Hero() {
                 zsh — 80×24
               </span>
             </div>
-            <div className="p-5 font-mono text-sm leading-relaxed">
+            <div className="p-5 font-mono text-sm leading-relaxed text-left">
               <div className="text-tn-green">
                 ${' '}
                 <span className="text-tn-text">
