@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "available": "Disponível para trabalho",
+    "greeting": "Olá, eu sou",
+    "name": "Giovani de Oliveira",
+    "bio": "Desenvolvedor full-stack criando aplicações limpas e de alto desempenho. Apaixonado por open source, ferramentas de desenvolvimento e transformar problemas complexos em soluções elegantes.",
+    "viewProjects": "Ver Projetos",
+    "getInTouch": "Entrar em Contato",
+    "terminal": {
+      "whoami": "whoami",
+      "skills": "cat skills.json",
+      "status": "Construindo algo incrível"
+    }
+  }
+}
