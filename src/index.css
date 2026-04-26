@@ -1,17 +1,75 @@
 @import "tailwindcss";
 
-body {
-  background-color: #1a1b26;
-  color: #c0caf5;
+@theme {
+  --color-tn-bg: #1a1b26;
+  --color-tn-bgDark: #16161e;
+  --color-tn-surface: #24283b;
+  --color-tn-surfaceLight: #2f3348;
+  --color-tn-border: #3b4261;
+  --color-tn-borderLight: #414868;
+  --color-tn-text: #c0caf5;
+  --color-tn-textMuted: #565f89;
+  --color-tn-textDim: #414868;
+  --color-tn-blue: #7aa2f7;
+  --color-tn-cyan: #7dcfff;
+  --color-tn-purple: #bb9af7;
+  --color-tn-green: #9ece6a;
+  --color-tn-orange: #e0af68;
+  --color-tn-red: #f7768e;
+  --color-tn-teal: #73daca;
+  --color-tn-magenta: #ff9e64;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
-@theme {
-  --color-tokyo-bg: #1a1b26;
-  --color-tokyo-surface: #24283b;
-  --color-tokyo-border: #414868;
-  --color-tokyo-text: #c0caf5;
-  --color-tokyo-accent: #7aa2f7;
-  --color-tokyo-green: #9ece6a;
-  --color-tokyo-yellow: #e0af68;
-  --color-tokyo-red: #f7768e;
+body {
+  background-color: var(--color-tn-bg);
+  color: var(--color-tn-text);
+  font-family: var(--font-body);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-tn-bgDark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-tn-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-tn-textMuted);
+}
+
+::selection {
+  background: #7aa2f740;
+  color: var(--color-tn-text);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--color-tn-blue);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
 }
