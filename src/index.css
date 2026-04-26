@@ -118,14 +118,8 @@ body {
   }
 }
 
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
 }
 
 .animate-fade-in-up {
@@ -150,12 +144,4 @@ body {
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
-}
-
-.animate-pulse-glow {
-  animation: pulseGlow 4s ease-in-out infinite;
-}
-
-.terminal-cursor {
-  animation: blink 1s step-end infinite;
 }
