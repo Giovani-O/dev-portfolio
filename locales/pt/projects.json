@@ -1,0 +1,109 @@
+{
+  "projects": {
+    "label": "projetos",
+    "title": "Projetos Pessoais",
+    "subtitle": "Trabalhos selecionados que mostram minha abordagem para resolver problemas reais através de código.",
+    "featured": "Destaque",
+    "openSource": "Código Aberto",
+    "sideProject": "Projeto Pessoal",
+    "experiment": "Experimento",
+    "tool": "Ferramenta CLI",
+    "stars": "★",
+    "demo": "Demo",
+    "demoShort": "Demo",
+    "source": "Código",
+    "docs": "Docs",
+    "projects": {
+      "clerkWebhook": {
+        "title": "Clerk Webhook",
+        "description": "Um pequeno projeto desenvolvido com React e Node.js para experimentar com webhooks, para isso foi utilizado o Clerk, um serviço de autenticação e gerenciamento de usuários e foi feita a integração com os seus componentes de login e perfil.",
+        "type": "experiment",
+        "stars": "",
+        "tech": [
+          "Webhooks",
+          "Clerk",
+          "svix",
+          "Node.js",
+          "Fastify",
+          "React",
+          "Vite",
+          "Tanstack Query"
+        ],
+        "demoUrl": "",
+        "sourceUrl": "https://github.com/Giovani-O/clerk-webhook",
+        "image": "/dev-portfolio/projects/clerk-webhook.gif"
+      },
+      "webhookInspect": {
+        "title": "Webhook Inspect",
+        "description": "Uma solução fullstack completa para captura e inspeção de webhooks, projetada para acelerar o fluxo de desenvolvimento. O diferencial está na integração com a Google Gemini API (via Vercel AI SDK), que analisa o payload recebido e gera automaticamente esquemas de validação Zod e handlers TypeScript.",
+        "type": "sideProject",
+        "tech": [
+          "Webhooks",
+          "Fastify",
+          "Drizzle ORM",
+          "PostgreSQL",
+          "React",
+          "Vite",
+          "Tanstack Query/Router",
+          "Vitest",
+          "Tests",
+          "AI",
+          "Vercel AI SDK"
+        ],
+        "demoUrl": "",
+        "sourceUrl": "https://github.com/Giovani-O/webhook-inspect",
+        "image": "/dev-portfolio/projects/webhook-inspector.png"
+      },
+      "coffeeDelivery": {
+        "title": "Coffee Delivery",
+        "description": "Uma SPA (Single Page Application) desenvolvida como um desafio da trilha de React da Rocketseat. Durante o desenvolvimento foram utilizadas funcionalidades, bibliotecas e ferramentas disponíveis no ecossistema React, como Styled Components, Hooks, Contextos e Reducers. A aplicação também conta com um layout responsivo, se adaptando a diversos tamanhos de telas.",
+        "type": "sideProject",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Styled Components",
+          "CSS in JS",
+          "Hooks",
+          "Context API"
+        ],
+        "demoUrl": "https://ignite-coffee-delivery-hu2qn3fv7-giovani-o.vercel.app/",
+        "sourceUrl": "https://github.com/Giovani-O/ignite-coffee-delivery",
+        "image": "/dev-portfolio/projects/coffee.png"
+      },
+      "orangeBranchTaskManager": {
+        "title": "Orange Branch Task Manager",
+        "description": "Uma Web API desenvolvida com C# durante o programa Orange Branch da FCamara. O objetivo dessa API é o cadastro de usuários e tarefas simples, que são armazenados em um banco de dados MySQL. Após algumas ações, é enviada uma notificação via e-mail, para que isso aconteça, é usado o RabbitMQ para fazer a comunicação entre a API e um worker que observa a fila no RabbitMQ e dispara os emails. Nesse projeto, eu me esforçei para seguir padrões de Clean Architecture e SOLID, e também desenvolvi testes unitários para a lógica de negócios.",
+        "type": "sideProject",
+        "stars": "",
+        "tech": [
+          ".NET",
+          "C#",
+          "Entity Framework",
+          "RabbitMQ",
+          "xUnit",
+          "MySQL"
+        ],
+        "demoUrl": "",
+        "sourceUrl": "https://github.com/Giovani-O/OrangeBranchTaskManager",
+        "docsUrl": "",
+        "image": "/dev-portfolio/projects/task-manager.png"
+      },
+      "gatewayX": {
+        "title": "Orange Tasks",
+        "description": "Este é o front-end do Orange Branch Task Manager, desenvolvido com React, TypeScript, Tailwind e outras tecnologias. O objetivo era ter uma interface responsiva integrada com a API para facilitar o acesso as funcionalidades da mesma.",
+        "type": "sideProject",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Hooks",
+          "Zustand",
+          "Axios"
+        ],
+        "demoUrl": "",
+        "sourceUrl": "https://github.com/Giovani-O/orange-branch-task-manager-react",
+        "image": "/dev-portfolio/projects/orange-tasks.png"
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
-import { Navbar } from './components/navbar';
-import { Hero } from './components/hero';
-import { Skills } from './components/skills';
-import './app.css';
+import './app.css'
+import { Hero } from './components/hero'
+import { Navbar } from './components/navbar'
+import { Projects } from './components/projects'
+import { Skills } from './components/skills'
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
       <Navbar />
       <Hero />
       <Skills />
+      <Projects />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
