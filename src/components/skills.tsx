@@ -128,7 +128,7 @@ export function Skills() {
                   {categoryData.skills.map((skill: string) => (
                     <span
                       key={skill}
-                      className={`px-2.5 py-1 rounded-md bg-tn-bg/60 border border-tn-border text-xs font-mono text-tn-text hover:${category.hoverBorderClass} transition-colors cursor-default`}
+                      className="px-2.5 py-1 rounded-md bg-tn-bg/60 border border-tn-border text-xs font-mono text-tn-text hover:border-tn-blue/40 transition-colors cursor-default"
                     >
                       {skill}
                     </span>
