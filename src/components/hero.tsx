@@ -30,8 +30,9 @@ export function Hero() {
             </div>
           </div>
 
-          <h1 className="animate-fade-in-up-d1 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mb-6 text-left">
-            <span className="text-tn-text">{t('hero.greeting')}</span>{' '}
+          <h1 className="animate-fade-in-up-d1 font-display text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight leading-[1.05] mb-6 text-left">
+            <span className="text-tn-text">{t('hero.greeting')}</span>
+            <br />
             <span className="bg-gradient-to-r from-tn-blue via-tn-purple to-tn-cyan bg-clip-text text-transparent">
               {t('hero.name')}
             </span>
@@ -98,7 +99,7 @@ export function Hero() {
                 zsh — 80×24
               </span>
             </div>
-            <div className="p-5 font-mono text-sm leading-relaxed">
+            <div className="p-5 font-mono text-sm leading-relaxed text-left">
               <div className="text-tn-green">
                 ${' '}
                 <span className="text-tn-text">
