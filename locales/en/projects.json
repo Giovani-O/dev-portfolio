@@ -31,7 +31,7 @@
         ],
         "demoUrl": "",
         "sourceUrl": "https://github.com/Giovani-O/clerk-webhook",
-        "image": "clerk-webhook.gif"
+        "image": "https://raw.githubusercontent.com/Giovani-O/portfolio-images/refs/heads/main/clerk-webhook.gif"
       },
       "webhookInspect": {
         "title": "Webhook Inspect",
@@ -52,7 +52,7 @@
         ],
         "demoUrl": "",
         "sourceUrl": "https://github.com/Giovani-O/webhook-inspect",
-        "image": "webhook-inspector.png"
+        "image": "https://raw.githubusercontent.com/Giovani-O/portfolio-images/refs/heads/main/webhook-inspector.png"
       },
       "coffeeDelivery": {
         "title": "Coffee Delivery",
@@ -68,7 +68,7 @@
         ],
         "demoUrl": "https://ignite-coffee-delivery-hu2qn3fv7-giovani-o.vercel.app/",
         "sourceUrl": "https://github.com/Giovani-O/ignite-coffee-delivery",
-        "image": "coffee.png"
+        "image": "https://raw.githubusercontent.com/Giovani-O/portfolio-images/refs/heads/main/coffee.png"
       },
       "orangeBranchTaskManager": {
         "title": "Orange Branch Task Manager",
@@ -86,7 +86,7 @@
         "demoUrl": "",
         "sourceUrl": "https://github.com/Giovani-O/OrangeBranchTaskManager",
         "docsUrl": "",
-        "image": "task-manager.png"
+        "image": "https://raw.githubusercontent.com/Giovani-O/portfolio-images/refs/heads/main/task-manager.png"
       },
       "gatewayX": {
         "title": "Orange Tasks",
@@ -102,7 +102,7 @@
         ],
         "demoUrl": "",
         "sourceUrl": "https://github.com/Giovani-O/orange-branch-task-manager-react",
-        "image": "orange-tasks.png"
+        "image": "https://raw.githubusercontent.com/Giovani-O/portfolio-images/refs/heads/main/orange-tasks.png"
       }
     }
   }
