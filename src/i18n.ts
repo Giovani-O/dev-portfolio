@@ -1,6 +1,9 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
+import enCommon from '../locales/en/common.json';
+import ptCommon from '../locales/pt/common.json';
+
 function getInitialLanguage(): string {
   const stored = localStorage.getItem('lang');
   if (stored) return stored;
@@ -13,8 +16,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: { translation: {} },
-      pt: { translation: {} },
+      en: { translation: enCommon },
+      pt: { translation: ptCommon },
     },
     lng: getInitialLanguage(),
     fallbackLng: 'en',
