@@ -14,53 +14,95 @@
     "source": "Source",
     "docs": "Docs",
     "projects": {
-      "codeSync": {
-        "title": "CodeSync",
-        "description": "A real-time collaborative code editor with integrated terminal, cursor presence, and language-aware syntax highlighting. Built for remote pair programming sessions.",
-        "type": "openSource",
-        "stars": "2.4k",
-        "tech": ["TypeScript", "Node.js", "WebSocket", "CRDT"],
-        "demoUrl": "#",
-        "sourceUrl": "#",
-        "image": "https://picsum.photos/seed/tokyo-night-code/800/500.jpg"
-      },
-      "metricsViz": {
-        "title": "MetricsViz",
-        "description": "Open-source dashboard for visualizing system metrics with real-time charts, alerting rules, and customizable widget layouts.",
-        "type": "sideProject",
-        "tech": ["React", "Go", "InfluxDB"],
-        "demoUrl": "#",
-        "sourceUrl": "#",
-        "image": "https://picsum.photos/seed/dark-dashboard-ui/600/340.jpg"
-      },
-      "neuralKit": {
-        "title": "NeuralKit",
-        "description": "A lightweight neural network library for educational purposes. Build, train, and visualize simple networks entirely in the browser.",
+      "clerkWebhook": {
+        "title": "Clerk Webhook",
+        "description": "A small project developed with React and Node.js to experiment with webhooks. For this, Clerk was used - an authentication and user management service - and integration was made with its login and profile components.",
         "type": "experiment",
-        "tech": ["TypeScript", "WebGL", "Canvas"],
-        "demoUrl": "#",
-        "sourceUrl": "#",
-        "image": "https://picsum.photos/seed/neural-network-vis/600/340.jpg"
+        "stars": "",
+        "tech": [
+          "Webhooks",
+          "Clerk",
+          "svix",
+          "Node.js",
+          "Fastify",
+          "React",
+          "Vite",
+          "Tanstack Query"
+        ],
+        "demoUrl": "",
+        "sourceUrl": "https://github.com/Giovani-O/clerk-webhook",
+        "image": "/dev-portfolio/projects/clerk-webhook.gif"
       },
-      "stowKit": {
-        "title": "StowKit",
-        "description": "A smart dotfiles manager that detects system differences, handles package dependencies, and symlinks configs across machines.",
-        "type": "tool",
-        "stars": "890",
-        "tech": ["Rust", "Shell", "TOML"],
-        "demoUrl": "#",
-        "sourceUrl": "#",
-        "docsUrl": "#",
-        "image": "https://picsum.photos/seed/cli-tool-dark/600/340.jpg"
+      "webhookInspect": {
+        "title": "Webhook Inspect",
+        "description": "A complete fullstack solution for capturing and inspecting webhooks, designed to accelerate the development workflow. The standout feature is the integration with Google Gemini API (via Vercel AI SDK), which analyzes the received payload and automatically generates Zod validation schemas and TypeScript handlers. ",
+        "type": "sideProject",
+        "tech": [
+          "Webhooks",
+          "Fastify",
+          "Drizzle ORM",
+          "PostgreSQL",
+          "React",
+          "Vite",
+          "Tanstack Query/Router",
+          "Vitest",
+          "Tests",
+          "AI",
+          "Vercel AI SDK"
+        ],
+        "demoUrl": "",
+        "sourceUrl": "https://github.com/Giovani-O/webhook-inspect",
+        "image": "/dev-portfolio/projects/webhook-inspector.png"
+      },
+      "coffeeDelivery": {
+        "title": "Coffee Delivery",
+        "description": "A SPA (Single Page Application) developed as a challenge in Rocketseat's React course. During development, features, libraries and tools available in the React ecosystem were used, such as Styled Components, Hooks, Contexts and Reducers. The application also has a responsive layout, adapting to different screen sizes.",
+        "type": "sideProject",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Styled Components",
+          "CSS in JS",
+          "Hooks",
+          "Context API"
+        ],
+        "demoUrl": "https://ignite-coffee-delivery-hu2qn3fv7-giovani-o.vercel.app/",
+        "sourceUrl": "https://github.com/Giovani-O/ignite-coffee-delivery",
+        "image": "/dev-portfolio/projects/coffee.png"
+      },
+      "orangeBranchTaskManager": {
+        "title": "Orange Branch Task Manager",
+        "description": "A Web API developed with C# during FCamara's Orange Branch program. The purpose of this API is to register users and simple tasks, which are stored in a MySQL database. After some actions, a notification is sent via email, for this to happen, RabbitMQ is used to communicate between the API and a worker that observes the queue in RabbitMQ and sends emails. In this project, I strived to follow Clean Architecture and SOLID standards, and also developed unit tests for business logic.",
+        "type": "sideProject",
+        "stars": "",
+        "tech": [
+          ".NET",
+          "C#",
+          "Entity Framework",
+          "RabbitMQ",
+          "xUnit",
+          "MySQL"
+        ],
+        "demoUrl": "",
+        "sourceUrl": "https://github.com/Giovani-O/OrangeBranchTaskManager",
+        "docsUrl": "",
+        "image": "/dev-portfolio/projects/task-manager.png"
       },
       "gatewayX": {
-        "title": "GatewayX",
-        "description": "Lightweight API gateway with rate limiting, JWT auth, request transformation, and built-in observability. Designed for microservice architectures.",
-        "type": "openSource",
-        "tech": ["Go", "Docker", "Prometheus"],
+        "title": "Orange Tasks",
+        "description": "This is the front-end of Orange Branch Task Manager, built with React, TypeScript, Tailwind and other technologies. The objective was to have a responsive interface integrated with the API to facilitate access to its features.",
+        "type": "sideProject",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Hooks",
+          "Zustand",
+          "Axios"
+        ],
         "demoUrl": "",
-        "sourceUrl": "#",
-        "image": "https://picsum.photos/seed/api-gateway-dark/600/340.jpg"
+        "sourceUrl": "https://github.com/Giovani-O/orange-branch-task-manager-react",
+        "image": "/dev-portfolio/projects/orange-tasks.png"
       }
     }
   }

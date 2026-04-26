@@ -102,15 +102,15 @@ export function Projects() {
                 }`}
               >
                 <div className={isFeatured ? 'grid md:grid-cols-2' : ''}>
-                  <div className="relative overflow-hidden aspect-video">
-                    {project.image ? (
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="project-img w-full h-full object-cover"
-                      />
-                    ) : (
-                      <div className="w-full h-full bg-tn-bgDark" />
+                  <div className={isFeatured ? 'relative h-full min-h-[400px]' : 'relative overflow-hidden aspect-video'}>
+{project.image ? (
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="project-img absolute inset-0 w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="absolute inset-0 w-full h-full bg-tn-bgDark" />
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-tn-bgDark/80 via-transparent to-transparent" />
                     {isFeatured && (

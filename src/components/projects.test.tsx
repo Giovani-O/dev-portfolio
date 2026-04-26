@@ -40,51 +40,28 @@ describe('Projects', () => {
 
   it('renders featured project', () => {
     renderWithI18n(<Projects />)
-    expect(screen.getByText(/codeSync/i)).toBeInTheDocument()
+    expect(screen.getByText(/clerk webhook/i)).toBeInTheDocument()
     expect(screen.getByText(/featured/i)).toBeInTheDocument()
   })
 
-  it('renders codeSync project description', () => {
+  it('renders clerk webhook description', () => {
     renderWithI18n(<Projects />)
     expect(
-      screen.getByText(/real-time collaborative code editor/i),
+      screen.getByText(/experiment with webhooks/i),
     ).toBeInTheDocument()
   })
 
-  it('renders codeSync project tech stack', () => {
+  it('renders clerk webhook tech stack', () => {
     renderWithI18n(<Projects />)
-    const codeSyncTechs = screen.getAllByText(/^typescript$/i)
-    expect(codeSyncTechs.length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/^webhooks$/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/^clerk$/i).length).toBeGreaterThan(0)
     expect(screen.getAllByText(/^node\.js$/i).length).toBeGreaterThan(0)
-    expect(screen.getAllByText(/websocket/i).length).toBeGreaterThan(0)
-    expect(screen.getAllByText(/crdt/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/^fastify$/i).length).toBeGreaterThan(0)
   })
 
-  it('renders metricsViz project', () => {
+  it('renders other projects', () => {
     renderWithI18n(<Projects />)
-    expect(screen.getByText(/metricsViz/i)).toBeInTheDocument()
-  })
-
-  it('renders neuralKit project', () => {
-    renderWithI18n(<Projects />)
-    expect(screen.getByText(/neuralKit/i)).toBeInTheDocument()
-  })
-
-  it('renders StowKit project with Docs link', () => {
-    renderWithI18n(<Projects />)
-    expect(screen.getByText(/stowKit/i)).toBeInTheDocument()
-    expect(screen.getByText(/docs/i)).toBeInTheDocument()
-  })
-
-  it('renders GatewayX project', () => {
-    renderWithI18n(<Projects />)
-    expect(screen.getByText(/gatewayX/i)).toBeInTheDocument()
-  })
-
-  it('renders project links', () => {
-    renderWithI18n(<Projects />)
-    const links = screen.getAllByRole('link')
-    expect(links.length).toBeGreaterThan(0)
+    expect(screen.getAllByRole('link').length).toBeGreaterThan(0)
   })
 
   it('has correct section id for navigation', () => {
