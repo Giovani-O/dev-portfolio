@@ -1,0 +1,67 @@
+{
+  "projects": {
+    "label": "projetos",
+    "title": "Projetos Pessoais",
+    "subtitle": "Trabalhos selecionados que mostram minha abordagem para resolver problemas reais através de código.",
+    "featured": "Destaque",
+    "openSource": "Código Aberto",
+    "sideProject": "Projeto Pessoal",
+    "experiment": "Experimento",
+    "tool": "Ferramenta CLI",
+    "stars": "★",
+    "demo": "Demo",
+    "demoShort": "Demo",
+    "source": "Código",
+    "docs": "Docs",
+    "projects": {
+      "codeSync": {
+        "title": "CodeSync",
+        "description": "Um editor de código colaborativo em tempo real com terminal integrado, presença de cursor e destaque de sintaxe sensível à linguagem. Construído para sessões de programação em par remotas.",
+        "type": "openSource",
+        "stars": "2.4k",
+        "tech": ["TypeScript", "Node.js", "WebSocket", "CRDT"],
+        "demoUrl": "#",
+        "sourceUrl": "#",
+        "image": "https://picsum.photos/seed/tokyo-night-code/800/500.jpg"
+      },
+      "metricsViz": {
+        "title": "MetricsViz",
+        "description": "Dashboard open source para visualização de métricas do sistema com gráficos em tempo real, regras de alerta e layouts de widgets personalizáveis.",
+        "type": "sideProject",
+        "tech": ["React", "Go", "InfluxDB"],
+        "demoUrl": "#",
+        "sourceUrl": "#",
+        "image": "https://picsum.photos/seed/dark-dashboard-ui/600/340.jpg"
+      },
+      "neuralKit": {
+        "title": "NeuralKit",
+        "description": "Uma biblioteca leve de redes neurais para fins educacionais. Construa, treine e visualize redes simples inteiramente no navegador.",
+        "type": "experiment",
+        "tech": ["TypeScript", "WebGL", "Canvas"],
+        "demoUrl": "#",
+        "sourceUrl": "#",
+        "image": "https://picsum.photos/seed/neural-network-vis/600/340.jpg"
+      },
+      "stowKit": {
+        "title": "StowKit",
+        "description": "Um gerenciador inteligente de dotfiles que detecta diferenças do sistema, gerencia dependências de pacotes e faz symlink de configurações entre máquinas.",
+        "type": "tool",
+        "stars": "890",
+        "tech": ["Rust", "Shell", "TOML"],
+        "demoUrl": "#",
+        "sourceUrl": "#",
+        "docsUrl": "#",
+        "image": "https://picsum.photos/seed/cli-tool-dark/600/340.jpg"
+      },
+      "gatewayX": {
+        "title": "GatewayX",
+        "description": "API gateway leve com rate limiting, autenticação JWT, transformação de requisições e observabilidade integrada. Projetado para arquiteturas de microsserviços.",
+        "type": "openSource",
+        "tech": ["Go", "Docker", "Prometheus"],
+        "demoUrl": "",
+        "sourceUrl": "#",
+        "image": "https://picsum.photos/seed/api-gateway-dark/600/340.jpg"
+      }
+    }
+  }
+}

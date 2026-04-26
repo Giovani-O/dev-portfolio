@@ -1,0 +1,67 @@
+{
+  "projects": {
+    "label": "projects",
+    "title": "Personal Projects",
+    "subtitle": "Selected works that showcase my approach to solving real-world problems through code.",
+    "featured": "Featured",
+    "openSource": "Open Source",
+    "sideProject": "Side Project",
+    "experiment": "Experiment",
+    "tool": "CLI Tool",
+    "stars": "★",
+    "demo": "Live Demo",
+    "demoShort": "Demo",
+    "source": "Source",
+    "docs": "Docs",
+    "projects": {
+      "codeSync": {
+        "title": "CodeSync",
+        "description": "A real-time collaborative code editor with integrated terminal, cursor presence, and language-aware syntax highlighting. Built for remote pair programming sessions.",
+        "type": "openSource",
+        "stars": "2.4k",
+        "tech": ["TypeScript", "Node.js", "WebSocket", "CRDT"],
+        "demoUrl": "#",
+        "sourceUrl": "#",
+        "image": "https://picsum.photos/seed/tokyo-night-code/800/500.jpg"
+      },
+      "metricsViz": {
+        "title": "MetricsViz",
+        "description": "Open-source dashboard for visualizing system metrics with real-time charts, alerting rules, and customizable widget layouts.",
+        "type": "sideProject",
+        "tech": ["React", "Go", "InfluxDB"],
+        "demoUrl": "#",
+        "sourceUrl": "#",
+        "image": "https://picsum.photos/seed/dark-dashboard-ui/600/340.jpg"
+      },
+      "neuralKit": {
+        "title": "NeuralKit",
+        "description": "A lightweight neural network library for educational purposes. Build, train, and visualize simple networks entirely in the browser.",
+        "type": "experiment",
+        "tech": ["TypeScript", "WebGL", "Canvas"],
+        "demoUrl": "#",
+        "sourceUrl": "#",
+        "image": "https://picsum.photos/seed/neural-network-vis/600/340.jpg"
+      },
+      "stowKit": {
+        "title": "StowKit",
+        "description": "A smart dotfiles manager that detects system differences, handles package dependencies, and symlinks configs across machines.",
+        "type": "tool",
+        "stars": "890",
+        "tech": ["Rust", "Shell", "TOML"],
+        "demoUrl": "#",
+        "sourceUrl": "#",
+        "docsUrl": "#",
+        "image": "https://picsum.photos/seed/cli-tool-dark/600/340.jpg"
+      },
+      "gatewayX": {
+        "title": "GatewayX",
+        "description": "Lightweight API gateway with rate limiting, JWT auth, request transformation, and built-in observability. Designed for microservice architectures.",
+        "type": "openSource",
+        "tech": ["Go", "Docker", "Prometheus"],
+        "demoUrl": "",
+        "sourceUrl": "#",
+        "image": "https://picsum.photos/seed/api-gateway-dark/600/340.jpg"
+      }
+    }
+  }
+}
