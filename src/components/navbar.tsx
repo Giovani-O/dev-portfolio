@@ -51,7 +51,7 @@ export function Navbar() {
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'pt' : 'en'
     i18n.changeLanguage(newLang)
-    localStorage.setItem('lang', newLang)
+    localStorage.setItem('@dev-portfolio-lang', newLang)
   }
 
   const handleNavClick = (
@@ -164,7 +164,7 @@ export function Navbar() {
             onClick={toggleLanguage}
             className="py-2.5 px-3 rounded-lg text-sm text-tn-textMuted hover:text-tn-text hover:bg-tn-surface/50 transition-all text-left"
           >
-            {i18n.language === 'en' ? 'Português' : 'English'}
+            {t('nav.switchTo')}
           </button>
 
           <a

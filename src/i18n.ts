@@ -5,7 +5,7 @@ import enCommon from '../locales/en/common.json';
 import ptCommon from '../locales/pt/common.json';
 
 function getInitialLanguage(): string {
-  const stored = localStorage.getItem('lang');
+  const stored = localStorage.getItem('@dev-portfolio-lang');
   if (stored) return stored;
   const browserLang = navigator.language;
   if (browserLang.startsWith('pt')) return 'pt';
