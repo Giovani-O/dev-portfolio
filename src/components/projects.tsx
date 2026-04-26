@@ -31,8 +31,8 @@ export function Projects() {
       { threshold: 0.1, rootMargin: '0px 0px -60px 0px' },
     )
     revealElements.forEach((el) => {
-        observer.observe(el)
-      })
+      observer.observe(el)
+    })
     return () => observer.disconnect()
   }, [])
 
@@ -68,14 +68,14 @@ export function Projects() {
               image: string
             }
 
-const isFeatured = index === 0
-              const typeLabel = t(`projects.${project.type}`)
+            const isFeatured = index === 0
+            const typeLabel = t(`projects.${project.type}`)
 
             const hasDemo =
               project.demoUrl &&
               project.demoUrl !== '' &&
               project.type !== 'openSource'
-            const hasDocs = key === 'stowKit'
+            // const hasDocs = key === 'stowKit'
 
             const typeColor =
               project.type === 'openSource'
@@ -103,15 +103,21 @@ const isFeatured = index === 0
                 }`}
               >
                 <div className={isFeatured ? 'grid md:grid-cols-2' : ''}>
-                  <div className={isFeatured ? 'relative h-full min-h-[400px]' : 'relative overflow-hidden aspect-video'}>
-{project.image ? (
-                        <img
-                          src={project.image}
-                          alt={project.title}
-                          className="project-img absolute inset-0 w-full h-full object-cover"
-                        />
-                      ) : (
-                        <div className="absolute inset-0 w-full h-full bg-tn-bgDark" />
+                  <div
+                    className={
+                      isFeatured
+                        ? 'relative h-full min-h-[400px]'
+                        : 'relative overflow-hidden aspect-video'
+                    }
+                  >
+                    {project.image ? (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="project-img absolute inset-0 w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 w-full h-full bg-tn-bgDark" />
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-tn-bgDark/80 via-transparent to-transparent" />
                     {isFeatured && (
@@ -176,14 +182,14 @@ const isFeatured = index === 0
                           <HugeiconsIcon icon={ArrowRight01Icon} size={14} />
                         </a>
                       )}
-                      {hasDocs && (
+                      {/*{hasDocs && (
                         <a
                           href={project.docsUrl || '#'}
                           className="inline-flex items-center gap-1.5 text-sm font-medium text-tn-textMuted hover:text-tn-text transition-colors"
                         >
                           {t('projects.docs')}
                         </a>
-                      )}
+                      )}*/}
                       <a
                         href={project.sourceUrl}
                         className="inline-flex items-center gap-1.5 text-sm font-medium text-tn-textMuted hover:text-tn-text transition-colors"
