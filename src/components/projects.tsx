@@ -75,7 +75,7 @@ export function Projects() {
               project.demoUrl &&
               project.demoUrl !== '' &&
               project.type !== 'openSource'
-            const hasDocs = key === 'stowKit'
+            // const hasDocs = key === 'stowKit'
 
             const typeColor =
               project.type === 'openSource'
