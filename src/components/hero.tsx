@@ -1,9 +1,9 @@
-import { HugeiconsIcon } from '@hugeicons/react'
 import {
   ArrowRight01Icon,
   GithubIcon,
   Linkedin01Icon,
 } from '@hugeicons/core-free-icons'
+import { HugeiconsIcon } from '@hugeicons/react'
 import { useTranslation } from 'react-i18next'
 
 export function Hero() {
@@ -20,7 +20,7 @@ export function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-tn-cyan/3 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 md:py-0 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-        <div>
+        <div className="text-left">
           <div className="animate-fade-in-up">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-tn-border bg-tn-surface/50 mb-6">
               <span className="w-2 h-2 rounded-full bg-tn-green animate-pulse" />
@@ -30,15 +30,14 @@ export function Hero() {
             </div>
           </div>
 
-          <h1 className="animate-fade-in-up-d1 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mb-6">
-            <span className="text-tn-text">{t('hero.greeting')}</span>
-            {' '}
+          <h1 className="animate-fade-in-up-d1 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mb-6 text-left">
+            <span className="text-tn-text">{t('hero.greeting')}</span>{' '}
             <span className="bg-gradient-to-r from-tn-blue via-tn-purple to-tn-cyan bg-clip-text text-transparent">
               {t('hero.name')}
             </span>
           </h1>
 
-          <p className="animate-fade-in-up-d2 text-lg md:text-xl text-tn-textMuted leading-relaxed mb-8 max-w-lg">
+          <p className="animate-fade-in-up-d2 text-lg md:text-xl text-tn-textMuted leading-relaxed mb-8 max-w-lg text-left">
             {t('hero.bio')}
           </p>
 
@@ -101,12 +100,18 @@ export function Hero() {
             </div>
             <div className="p-5 font-mono text-sm leading-relaxed">
               <div className="text-tn-green">
-                $ <span className="text-tn-text">{t('hero.terminal.whoami')}</span>
+                ${' '}
+                <span className="text-tn-text">
+                  {t('hero.terminal.whoami')}
+                </span>
               </div>
               <div className="text-tn-cyan mt-1 ml-2">giovani_oliveira</div>
 
               <div className="text-tn-green mt-3">
-                $ <span className="text-tn-text">{t('hero.terminal.skills')}</span>
+                ${' '}
+                <span className="text-tn-text">
+                  {t('hero.terminal.skills')}
+                </span>
               </div>
               <div className="text-tn-textMuted mt-1 ml-2">{'{'}</div>
               <div className="ml-4">
@@ -122,7 +127,7 @@ export function Hero() {
               <div className="text-tn-green mt-3">
                 $ <span className="text-tn-text">echo $STATUS</span>
               </div>
-              <div className="text-tn-teal mt-1 ml-2 terminal-cursor">
+              <div className="text-tn-teal mt-1 ml-2">
                 {t('hero.terminal.status')}
               </div>
             </div>

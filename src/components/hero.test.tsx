@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { I18nextProvider } from 'react-i18next'
-import { describe, expect, it, beforeEach } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest'
 import { Hero } from '../components/hero'
 import i18n from '../i18n'
 
@@ -30,24 +30,34 @@ describe('Hero', () => {
 
   it('renders View Projects CTA button', () => {
     renderWithI18n(<Hero />)
-    expect(screen.getByRole('link', { name: /view projects/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('link', { name: /view projects/i }),
+    ).toBeInTheDocument()
   })
 
   it('renders Get in Touch CTA button', () => {
     renderWithI18n(<Hero />)
-    expect(screen.getByRole('link', { name: /get in touch/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('link', { name: /get in touch/i }),
+    ).toBeInTheDocument()
   })
 
   it('renders GitHub social link', () => {
     renderWithI18n(<Hero />)
     const githubLink = screen.getByRole('link', { name: /github/i })
-    expect(githubLink).toHaveAttribute('href', expect.stringContaining('github'))
+    expect(githubLink).toHaveAttribute(
+      'href',
+      expect.stringContaining('github'),
+    )
   })
 
   it('renders LinkedIn social link', () => {
     renderWithI18n(<Hero />)
     const linkedinLink = screen.getByRole('link', { name: /linkedin/i })
-    expect(linkedinLink).toHaveAttribute('href', expect.stringContaining('linkedin'))
+    expect(linkedinLink).toHaveAttribute(
+      'href',
+      expect.stringContaining('linkedin'),
+    )
   })
 
   it('renders terminal component on desktop', () => {
