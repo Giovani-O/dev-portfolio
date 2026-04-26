@@ -30,7 +30,9 @@ export function Projects() {
       },
       { threshold: 0.1, rootMargin: '0px 0px -60px 0px' },
     )
-    revealElements.forEach((el) => observer.observe(el))
+    revealElements.forEach((el) => {
+        observer.observe(el)
+      })
     return () => observer.disconnect()
   }, [])
 
@@ -66,9 +68,8 @@ export function Projects() {
               image: string
             }
 
-            const isFeatured = index === 0
-            const isLast = index === projectKeys.length - 1
-            const typeLabel = t(`projects.${project.type}`)
+const isFeatured = index === 0
+              const typeLabel = t(`projects.${project.type}`)
 
             const hasDemo =
               project.demoUrl &&
@@ -132,6 +133,7 @@ export function Projects() {
                           className="w-3.5 h-3.5"
                           fill="currentColor"
                           viewBox="0 0 24 24"
+                          aria-label={typeLabel}
                         >
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                         </svg>
