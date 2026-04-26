@@ -1,70 +1,77 @@
-import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { HugeiconsIcon } from '@hugeicons/react';
-import { ComputerTerminal01Icon } from '@hugeicons/core-free-icons';
-import { Menu01Icon } from '@hugeicons/core-free-icons';
-import { ArrowRight01Icon } from '@hugeicons/core-free-icons';
+import {
+  ArrowRight01Icon,
+  ComputerTerminal01Icon,
+  Menu01Icon,
+} from '@hugeicons/core-free-icons'
+import { HugeiconsIcon } from '@hugeicons/react'
+import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const navItems = [
   { id: 'hero', labelKey: 'nav.home' },
   { id: 'skills', labelKey: 'nav.skills' },
   { id: 'projects', labelKey: 'nav.projects' },
   { id: 'career', labelKey: 'nav.career' },
-];
+]
 
 export function Navbar() {
-  const { t, i18n } = useTranslation();
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('hero');
+  const { t, i18n } = useTranslation()
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('hero')
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+      setIsScrolled(window.scrollY > 20)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+            setActiveSection(entry.target.id)
           }
-        });
+        })
       },
-      { threshold: 0.3 }
-    );
+      { threshold: 0.3 },
+    )
 
     navItems.forEach(({ id }) => {
-      const element = document.getElementById(id);
-      if (element) observer.observe(element);
-    });
+      const element = document.getElementById(id)
+      if (element) observer.observe(element)
+    })
 
-    return () => observer.disconnect();
-  }, []);
+    return () => observer.disconnect()
+  }, [])
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'pt' : 'en';
-    i18n.changeLanguage(newLang);
-    localStorage.setItem('lang', newLang);
-  };
+    const newLang = i18n.language === 'en' ? 'pt' : 'en'
+    i18n.changeLanguage(newLang)
+    localStorage.setItem('lang', newLang)
+  }
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    const element = document.getElementById(id);
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string,
+  ) => {
+    e.preventDefault()
+    const element = document.getElementById(id)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
+      element.scrollIntoView({ behavior: 'smooth' })
+      setIsMobileMenuOpen(false)
     }
-  };
+  }
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-tn-bgDark/95 backdrop-blur-xl border-b border-tn-border' : ''
+        isScrolled
+          ? 'bg-tn-bgDark/95 backdrop-blur-xl border-b border-tn-border'
+          : ''
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -75,10 +82,14 @@ export function Navbar() {
           className="flex items-center gap-2.5 group"
         >
           <div className="w-8 h-8 rounded-lg bg-tn-surface border border-tn-border flex items-center justify-center group-hover:border-tn-blue transition-colors">
-            <HugeiconsIcon icon={ComputerTerminal01Icon} size={16} color="#7aa2f7" />
+            <HugeiconsIcon
+              icon={ComputerTerminal01Icon}
+              size={16}
+              color="#7aa2f7"
+            />
           </div>
           <span className="font-display font-semibold text-tn-text text-sm tracking-tight">
-            alex.dev
+            giovani.oliveira
           </span>
         </a>
 
@@ -98,9 +109,10 @@ export function Navbar() {
               {t(labelKey)}
             </a>
           ))}
-          
+
           {/* Language Toggle */}
           <button
+            type="button"
             onClick={toggleLanguage}
             className="text-xs font-mono text-tn-textMuted hover:text-tn-cyan transition-colors"
             title={t('nav.language')}
@@ -120,6 +132,7 @@ export function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
+          type="button"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden w-9 h-9 flex items-center justify-center rounded-lg border border-tn-border hover:border-tn-textMuted transition-colors"
           aria-label="Toggle menu"
@@ -145,8 +158,9 @@ export function Navbar() {
               {t(labelKey)}
             </a>
           ))}
-          
+
           <button
+            type="button"
             onClick={toggleLanguage}
             className="py-2.5 px-3 rounded-lg text-sm text-tn-textMuted hover:text-tn-text hover:bg-tn-surface/50 transition-all text-left"
           >
@@ -163,5 +177,5 @@ export function Navbar() {
         </div>
       </div>
     </nav>
-  );
+  )
 }
