@@ -105,9 +105,9 @@ export function Skills() {
                 key={category.key}
                 className="scroll-reveal card-hover bg-tn-surface/40 border border-tn-border rounded-xl p-6 group"
               >
-                <div className="flex items-center gap-3 mb-5">
+                <div className="flex items-start gap-3 mb-5">
                   <div
-                    className={`w-10 h-10 rounded-lg ${category.bgClass} border ${category.borderClass} flex items-center justify-center group-hover:${category.hoverBgClass} transition-colors`}
+                    className={`w-10 h-10 rounded-lg ${category.bgClass} border ${category.borderClass} flex items-center justify-center shrink-0 group-hover:${category.hoverBgClass} transition-colors`}
                   >
                     <HugeiconsIcon
                       icon={category.icon}
@@ -115,7 +115,7 @@ export function Skills() {
                       className={`${category.colorClass} transition-all duration-300 ${category.hoverIconClass}`}
                     />
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="font-display font-semibold text-sm">
                       {categoryData.title}
                     </h3>
