@@ -116,11 +116,17 @@ export function Hero() {
               <div className="text-tn-textMuted mt-1 ml-2">{'{'}</div>
               <div className="ml-4">
                 <span className="text-tn-purple">"frontend"</span>:
-                <span className="text-tn-orange">["React", "TypeScript"]</span>,
+                <span className="text-tn-orange">
+                  ["React", "Next.js", "Tailwind"]
+                </span>
+                ,
               </div>
               <div className="ml-4">
                 <span className="text-tn-purple">"backend"</span>:
-                <span className="text-tn-orange">["Node", "Python"]</span>,
+                <span className="text-tn-orange">
+                  ["Node", "Fastify", "Prisma ORM"]
+                </span>
+                ,
               </div>
               <div className="text-tn-textMuted ml-2">{'}'}</div>
 
