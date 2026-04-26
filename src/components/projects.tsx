@@ -2,7 +2,7 @@ import { ArrowRight01Icon, GithubIcon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ProjectImage } from './ProjectImage'
+
 
 const techColors = [
   'text-tn-cyan bg-tn-cyan/10 border-tn-cyan/20',
@@ -112,8 +112,8 @@ export function Projects() {
                     }
                   >
                     {project.image ? (
-                      <ProjectImage
-                        imageName={project.image}
+                      <img
+                        src={project.image}
                         alt={project.title}
                         className="project-img absolute inset-0 w-full h-full object-cover"
                       />
