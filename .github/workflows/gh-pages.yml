@@ -19,14 +19,14 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - run: npm ci
 
       - run: npm run build
 
-      - uses: JamesIves/github-pages-deploy-action@v5
+      - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
           clean-exclude: |
