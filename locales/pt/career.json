@@ -1,0 +1,57 @@
+{
+  "career": {
+    "label": "experiencia",
+    "title": "Carreira e Formação",
+    "subtitle": "O caminho que moldou minha perspectiva de engenharia.",
+    "work": {
+      "title": "Experiência Profissional",
+      "items": [
+        {
+          "role": "Engenheiro Full-Stack Sênior",
+          "company": "Vercel",
+          "companyColor": "text-tn-blue",
+          "period": "2022 — Present",
+          "description": "Liderando desenvolvimento de ferramentas internas e funcionalidades de experiência do desenvolvedor. Arquitetou o novo pipeline de deployment reduzindo tempos de build em 40%. Mentoreou engenheiros júnior.",
+          "tech": ["TypeScript", "Next.js", "Go", "AWS"]
+        },
+        {
+          "role": "Desenvolvedor Full-Stack",
+          "company": "Stripe",
+          "companyColor": "text-tn-purple",
+          "period": "2020 — 2022",
+          "description": "Construiu e manteve interfaces de processamento de pagamentos processando milhões de transações. Projetou o framework de tratamento de erros adotado por 12 equipes.",
+          "tech": ["React", "Ruby", "GraphQL", "Kafka"]
+        },
+        {
+          "role": "Estagiário de Engenharia de Software",
+          "company": "GitHub",
+          "companyColor": "text-tn-cyan",
+          "period": "2019 — 2020",
+          "description": "Contribuiu para o editor de workflows do Actions. Entregou uma funcionalidade de validação de sintaxe que reduziu relatórios de erros em 25%. Escreveu testes de integração completos.",
+          "tech": ["TypeScript", "React", "Jest"]
+        }
+      ]
+    },
+    "education": {
+      "title": "Formação Acadêmica",
+      "items": [
+        {
+          "degree": "M.Sc. Ciência da Computação",
+          "school": "Stanford University",
+          "schoolColor": "text-tn-orange",
+          "period": "2018 — 2020",
+          "description": "Focado em sistemas distribuídos e interação humano-computador. Tese sobre algoritmos de edição colaborativa em tempo real. CR: 3.9/4.0.",
+          "tech": []
+        },
+        {
+          "degree": "B.S. Engenharia de Computação",
+          "school": "UC Berkeley",
+          "schoolColor": "text-tn-green",
+          "period": "2014 — 2018",
+          "description": "Focado em arquitetura de computadores e engenharia de software. Projeto de formatura sobre sistemas de build distribuídos. CR: 3.8/4.0.",
+          "tech": []
+        }
+      ]
+    }
+  }
+}
