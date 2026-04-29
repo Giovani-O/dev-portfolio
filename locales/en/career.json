@@ -1,0 +1,93 @@
+{
+  "career": {
+    "label": "experience",
+    "title": "Career & Education",
+    "subtitle": "The path that shaped my engineering perspective.",
+    "work": {
+      "title": "Work Experience",
+      "items": [
+        {
+          "id": 1,
+          "role": "Full-Stack Developer",
+          "company": "FCamara",
+          "companyColor": "text-tn-blue",
+          "period": "2025 — 2026",
+          "description": "Worked with a major client in the healthcare sector, developing solutions for an inventory control and traceability project that has generated positive impacts, such as cost reduction and reduction of asset loss.",
+          "tech": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Fastify",
+            "SQL Server",
+            "AWS"
+          ]
+        },
+        {
+          "id": 2,
+          "role": "[Trainee] Full-Stack Developer",
+          "company": "FCamara",
+          "companyColor": "text-tn-purple",
+          "period": "2024 — 2025",
+          "description": "Studies and training in relevant skills for my carreer. Full-stack development with a client in the healthcare sector.",
+          "tech": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Fastify",
+            "SQL Server",
+            "AWS"
+          ]
+        },
+        {
+          "id": 3,
+          "role": "Full-Stack Developer",
+          "company": "Canuto Dev",
+          "companyColor": "text-tn-cyan",
+          "period": "2021 — 2023",
+          "description": "Development and planning of new features, code improvements and bug fixing on the system of an insurance firm.",
+          "tech": ["Vue", "Vuetify", ".NET", "C#", "MongoDB"]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "id": 1,
+          "degree": "Rocketseat Full-Stack MBA",
+          "school": "Rocketseat/Sirius",
+          "schoolColor": "text-tn-orange",
+          "period": "2024 — 2025",
+          "description": "Full-stack development, focused on the React/Node.js ecosystem, clean architecture, SOLID principles and Domain Driven Design.",
+          "tech": []
+        },
+        {
+          "id": 2,
+          "degree": "Information Systems",
+          "school": "UNASP",
+          "schoolColor": "text-tn-green",
+          "period": "2019 — 2023",
+          "description": "Focused on software architecture, engineering, life cycle and development.",
+          "tech": []
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "subtitle": "Continuous Learning",
+      "color": "text-tn-teal",
+      "items": [
+        {
+          "id": 1,
+          "name": "Introduction to AWS - Rocketseat",
+          "iconColor": "text-tn-orange"
+        },
+        {
+          "id": 2,
+          "name": "Prompt Engineering - Rocketseat",
+          "iconColor": "text-tn-blue"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "career": {
+    "label": "experiencia",
+    "title": "Carreira e Formação",
+    "subtitle": "O caminho que moldou minha perspectiva de engenharia.",
+    "work": {
+      "title": "Experiência Profissional",
+      "items": [
+        {
+          "id": 1,
+          "role": "Desenvolvedor Full-Stack",
+          "company": "FCamara",
+          "companyColor": "text-tn-blue",
+          "period": "2025 — 2026",
+          "description": "Trabalhei juntamente a um grande cliente do setor de saúde, desenvolvendo soluções para um projeto de controle de estoque e rastreabilidade que tem gerado impactos positivos, como redução de custos e redução da perda de ativos. ",
+          "tech": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Fastify",
+            "SQL Server",
+            "AWS"
+          ]
+        },
+        {
+          "id": 2,
+          "role": "[Trainee] Desenvolvedor Full-Stack",
+          "company": "FCamara",
+          "companyColor": "text-tn-purple",
+          "period": "2024 — 2025",
+          "description": "Estudos e treinamentos sobre skills relevantes para a carreira. Desenvolvimento full-stack para um cliente do setor de saúde.",
+          "tech": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Fastify",
+            "SQL Server",
+            "AWS"
+          ]
+        },
+        {
+          "id": 3,
+          "role": "Desenvolvedor Full-Stack",
+          "company": "Canuto Dev",
+          "companyColor": "text-tn-cyan",
+          "period": "2021 — 2023",
+          "description": "Desenvolvimento e planejamento de novas funcionalidades, melhorias no código e correção de bugs no sistema de uma seguradora.",
+          "tech": ["Vue", "Vuetify", ".NET", "C#", "MongoDB"]
+        }
+      ]
+    },
+    "education": {
+      "title": "Formação Acadêmica",
+      "items": [
+        {
+          "id": 1,
+          "degree": "MBA Rocketseat Full-Stack",
+          "school": "Rocketseat/Sirius",
+          "schoolColor": "text-tn-orange",
+          "period": "2024 — 2025",
+          "description": "Desenvolvimento full-stack, focado no ecossistema React/Node.js, clean architecture, princípios SOLID e Domain Driven Design.",
+          "tech": []
+        },
+        {
+          "id": 2,
+          "degree": "Sistemas de Informação",
+          "school": "UNASP",
+          "schoolColor": "text-tn-green",
+          "period": "2019 — 2023",
+          "description": "Foco em arquitetura, engenharia, ciclo de vida e desenvolvimento de softwares.",
+          "tech": []
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificações",
+      "subtitle": "Aprendizado Contínuo",
+      "color": "text-tn-teal",
+      "items": [
+        {
+          "id": 1,
+          "name": "Introdução à AWS - Rocketseat",
+          "iconColor": "text-tn-orange"
+        },
+        {
+          "id": 2,
+          "name": "Engenharia de Prompt - Rocketseat",
+          "iconColor": "text-tn-blue"
+        }
+      ]
+    }
+  }
+}
