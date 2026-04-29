@@ -52,6 +52,16 @@
           "tech": []
         }
       ]
+    },
+    "certifications": {
+      "title": "Certificações",
+      "subtitle": "Aprendizado Contínuo",
+      "color": "text-tn-teal",
+      "items": [
+        { "name": "AWS Solutions Architect – Professional", "iconColor": "text-tn-orange" },
+        { "name": "Certified Kubernetes Administrator (CKA)", "iconColor": "text-tn-blue" },
+        { "name": "Google Professional Cloud Developer", "iconColor": "text-tn-purple" }
+      ]
     }
   }
 }
