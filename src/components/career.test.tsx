@@ -40,32 +40,34 @@ describe('Career', () => {
 
   it('renders first job role', () => {
     renderWithI18n(<Career />)
-    expect(screen.getByText(/senior full-stack engineer/i)).toBeInTheDocument()
+    const roles = screen.getAllByText(/full-stack developer/i)
+    expect(roles.length).toBeGreaterThan(0)
   })
 
   it('renders first job company', () => {
     renderWithI18n(<Career />)
-    expect(screen.getByText(/vercel/i)).toBeInTheDocument()
+    const companies = screen.getAllByText(/FCamara/i)
+    expect(companies.length).toBeGreaterThan(0)
   })
 
   it('renders first job period', () => {
     renderWithI18n(<Career />)
-    expect(screen.getByText(/2022 — present/i)).toBeInTheDocument()
+    expect(screen.getByText(/2025 — 2026/i)).toBeInTheDocument()
   })
 
   it('renders first education degree', () => {
     renderWithI18n(<Career />)
-    expect(screen.getByText(/m\.s\. computer science/i)).toBeInTheDocument()
+    expect(screen.getByText(/rocketseat full-stack mba/i)).toBeInTheDocument()
   })
 
   it('renders first education school', () => {
     renderWithI18n(<Career />)
-    expect(screen.getByText(/stanford university/i)).toBeInTheDocument()
+    expect(screen.getByText(/rocketseat\/sirius/i)).toBeInTheDocument()
   })
 
   it('renders tech stack on first job', () => {
     renderWithI18n(<Career />)
-    expect(screen.getAllByText('TypeScript').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('React').length).toBeGreaterThan(0)
     expect(screen.getAllByText('Next.js').length).toBeGreaterThan(0)
   })
 

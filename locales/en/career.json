@@ -7,6 +7,7 @@
       "title": "Work Experience",
       "items": [
         {
+          "id": 1,
           "role": "Full-Stack Developer",
           "company": "FCamara",
           "companyColor": "text-tn-blue",
@@ -22,6 +23,7 @@
           ]
         },
         {
+          "id": 2,
           "role": "[Trainee] Full-Stack Developer",
           "company": "FCamara",
           "companyColor": "text-tn-purple",
@@ -37,6 +39,7 @@
           ]
         },
         {
+          "id": 3,
           "role": "Full-Stack Developer",
           "company": "Canuto Dev",
           "companyColor": "text-tn-cyan",
@@ -50,6 +53,7 @@
       "title": "Education",
       "items": [
         {
+          "id": 1,
           "degree": "Rocketseat Full-Stack MBA",
           "school": "Rocketseat/Sirius",
           "schoolColor": "text-tn-orange",
@@ -58,6 +62,7 @@
           "tech": []
         },
         {
+          "id": 2,
           "degree": "Information Systems",
           "school": "UNASP",
           "schoolColor": "text-tn-green",
@@ -73,10 +78,12 @@
       "color": "text-tn-teal",
       "items": [
         {
+          "id": 1,
           "name": "Introduction to AWS - Rocketseat",
           "iconColor": "text-tn-orange"
         },
         {
+          "id": 2,
           "name": "Prompt Engineering - Rocketseat",
           "iconColor": "text-tn-blue"
         }

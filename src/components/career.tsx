@@ -12,6 +12,7 @@ export function Career() {
   const workData = t('career.work', { returnObjects: true }) as {
     title: string
     items: Array<{
+      id: number
       role: string
       company: string
       companyColor: string
@@ -24,6 +25,7 @@ export function Career() {
   const eduData = t('career.education', { returnObjects: true }) as {
     title: string
     items: Array<{
+      id: number
       degree: string
       school: string
       schoolColor: string
@@ -38,6 +40,7 @@ export function Career() {
     subtitle: string
     color: string
     items: Array<{
+      id: number
       name: string
       iconColor: string
     }>
@@ -77,7 +80,7 @@ export function Career() {
 
               {workData.items.map((job) => (
                 <div
-                  key={job.role + job.company}
+                  key={job.id}
                   className="scroll-reveal relative mb-10 last:mb-0"
                 >
                   <div
@@ -147,7 +150,7 @@ export function Career() {
 
               {eduData.items.map((item) => (
                 <div
-                  key={item.degree + item.school}
+                  key={item.id}
                   className="scroll-reveal relative mb-10 last:mb-0"
                 >
                   <div
@@ -201,7 +204,7 @@ export function Career() {
                   </div>
                   <div className="space-y-2.5">
                     {certData.items.map((cert) => (
-                      <div key={cert.name} className="flex items-center gap-3">
+                      <div key={cert.id} className="flex items-center gap-3">
                         <HugeiconsIcon
                           icon={Certificate01Icon}
                           size={16}
