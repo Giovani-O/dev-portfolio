@@ -1,4 +1,8 @@
-import { Briefcase01Icon, GraduationScrollIcon, Certificate01Icon } from '@hugeicons/core-free-icons'
+import {
+  Briefcase01Icon,
+  GraduationScrollIcon,
+  Certificate01Icon,
+} from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import { useTranslation } from 'react-i18next'
 
@@ -72,7 +76,10 @@ export function Career() {
               <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-tn-blue via-tn-purple to-tn-cyan opacity-30" />
 
               {workData.items.map((job) => (
-                <div key={job.role} className="scroll-reveal relative mb-10 last:mb-0">
+                <div
+                  key={job.role + job.company}
+                  className="scroll-reveal relative mb-10 last:mb-0"
+                >
                   <div
                     className={`absolute -left-8 top-1.5 w-[23px] h-[23px] rounded-full border-2 ${job.companyColor} bg-tn-bg flex items-center justify-center`}
                   >
@@ -86,7 +93,9 @@ export function Career() {
                         <h4 className="font-display font-semibold text-sm">
                           {job.role}
                         </h4>
-                        <p className={`${job.companyColor} text-sm font-medium`}>
+                        <p
+                          className={`${job.companyColor} text-sm font-medium`}
+                        >
                           {job.company}
                         </p>
                       </div>
@@ -100,12 +109,15 @@ export function Career() {
                     {job.tech.length > 0 && (
                       <div className="flex flex-wrap gap-1.5">
                         {job.tech.map((techItem, techIndex) => (
-                          <span key={techIndex}>
+                          <span key={techItem}>
                             <span className="text-[10px] font-mono text-tn-textDim">
                               {techItem}
                             </span>
                             {techIndex < job.tech.length - 1 && (
-                              <span className="text-[10px] text-tn-border"> · </span>
+                              <span className="text-[10px] text-tn-border">
+                                {' '}
+                                ·{' '}
+                              </span>
                             )}
                           </span>
                         ))}
@@ -134,7 +146,10 @@ export function Career() {
               <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-tn-orange/30 via-tn-green/30 to-tn-teal/30" />
 
               {eduData.items.map((item) => (
-                <div key={item.degree} className="scroll-reveal relative mb-10 last:mb-0">
+                <div
+                  key={item.degree + item.school}
+                  className="scroll-reveal relative mb-10 last:mb-0"
+                >
                   <div
                     className={`absolute -left-8 top-1.5 w-[23px] h-[23px] rounded-full border-2 ${item.schoolColor} bg-tn-bg flex items-center justify-center`}
                   >
@@ -148,7 +163,9 @@ export function Career() {
                         <h4 className="font-display font-semibold text-sm">
                           {item.degree}
                         </h4>
-                        <p className={`${item.schoolColor} text-sm font-medium`}>
+                        <p
+                          className={`${item.schoolColor} text-sm font-medium`}
+                        >
                           {item.school}
                         </p>
                       </div>
@@ -164,8 +181,12 @@ export function Career() {
               ))}
               {/* Certifications */}
               <div className="scroll-reveal relative">
-                <div className={`absolute -left-8 top-1.5 w-[23px] h-[23px] rounded-full border-2 ${certData.color} bg-tn-bg flex items-center justify-center`}>
-                  <div className={`w-2 h-2 rounded-full ${certData.color.replace('text-', 'bg-')}`} />
+                <div
+                  className={`absolute -left-8 top-1.5 w-[23px] h-[23px] rounded-full border-2 ${certData.color} bg-tn-bg flex items-center justify-center`}
+                >
+                  <div
+                    className={`w-2 h-2 rounded-full ${certData.color.replace('text-', 'bg-')}`}
+                  />
                 </div>
                 <div className="card-hover bg-tn-surface/40 border border-tn-border rounded-xl p-5">
                   <div className="flex items-start justify-between gap-2 mb-3">

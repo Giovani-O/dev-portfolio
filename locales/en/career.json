@@ -7,28 +7,42 @@
       "title": "Work Experience",
       "items": [
         {
-          "role": "Senior Full-Stack Engineer",
-          "company": "Vercel",
+          "role": "Full-Stack Developer",
+          "company": "FCamara",
           "companyColor": "text-tn-blue",
-          "period": "2022 — Present",
-          "description": "Leading development of internal tooling and developer experience features. Architected the new deployment pipeline reducing build times by 40%. Mentoring junior engineers.",
-          "tech": ["TypeScript", "Next.js", "Go", "AWS"]
+          "period": "2025 — 2026",
+          "description": "Worked with a major client in the healthcare sector, developing solutions for an inventory control and traceability project that has generated positive impacts, such as cost reduction and reduction of asset loss.",
+          "tech": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Fastify",
+            "SQL Server",
+            "AWS"
+          ]
+        },
+        {
+          "role": "[Trainee] Full-Stack Developer",
+          "company": "FCamara",
+          "companyColor": "text-tn-purple",
+          "period": "2024 — 2025",
+          "description": "Studies and training in relevant skills for my carreer. Full-stack development with a client in the healthcare sector.",
+          "tech": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Fastify",
+            "SQL Server",
+            "AWS"
+          ]
         },
         {
           "role": "Full-Stack Developer",
-          "company": "Stripe",
-          "companyColor": "text-tn-purple",
-          "period": "2020 — 2022",
-          "description": "Built and maintained payment processing interfaces handling millions of transactions. Designed the API error handling framework adopted across 12 teams.",
-          "tech": ["React", "Ruby", "GraphQL", "Kafka"]
-        },
-        {
-          "role": "Software Engineer Intern",
-          "company": "GitHub",
+          "company": "Canuto Dev",
           "companyColor": "text-tn-cyan",
-          "period": "2019 — 2020",
-          "description": "Contributed to the Actions workflow editor. Shipped a syntax validation feature that reduced user error reports by 25%. Wrote comprehensive integration tests.",
-          "tech": ["TypeScript", "React", "Jest"]
+          "period": "2021 — 2023",
+          "description": "Development and planning of new features, code improvements and bug fixing on the system of an insurance firm.",
+          "tech": ["Vue", "Vuetify", ".NET", "C#", "MongoDB"]
         }
       ]
     },
@@ -36,19 +50,19 @@
       "title": "Education",
       "items": [
         {
-          "degree": "M.S. Computer Science",
-          "school": "Stanford University",
+          "degree": "Rocketseat Full-Stack MBA",
+          "school": "Rocketseat/Sirius",
           "schoolColor": "text-tn-orange",
-          "period": "2018 — 2020",
-          "description": "Focused on distributed systems and human-computer interaction. Thesis on real-time collaborative editing algorithms. GPA: 3.9/4.0.",
+          "period": "2024 — 2025",
+          "description": "Full-stack development, focused on the React/Node.js ecosystem, clean architecture, SOLID principles and Domain Driven Design.",
           "tech": []
         },
         {
-          "degree": "B.S. Computer Engineering",
-          "school": "UC Berkeley",
+          "degree": "Information Systems",
+          "school": "UNASP",
           "schoolColor": "text-tn-green",
-          "period": "2014 — 2018",
-          "description": "Focused on computer architecture and software engineering. Capstone project on distributed build systems. GPA: 3.8/4.0.",
+          "period": "2019 — 2023",
+          "description": "Focused on software architecture, engineering, life cycle and development.",
           "tech": []
         }
       ]
@@ -58,9 +72,14 @@
       "subtitle": "Continuous Learning",
       "color": "text-tn-teal",
       "items": [
-        { "name": "AWS Solutions Architect – Professional", "iconColor": "text-tn-orange" },
-        { "name": "Certified Kubernetes Administrator (CKA)", "iconColor": "text-tn-blue" },
-        { "name": "Google Professional Cloud Developer", "iconColor": "text-tn-purple" }
+        {
+          "name": "Introduction to AWS - Rocketseat",
+          "iconColor": "text-tn-orange"
+        },
+        {
+          "name": "Prompt Engineering - Rocketseat",
+          "iconColor": "text-tn-blue"
+        }
       ]
     }
   }

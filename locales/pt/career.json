@@ -7,28 +7,42 @@
       "title": "Experiência Profissional",
       "items": [
         {
-          "role": "Engenheiro Full-Stack Sênior",
-          "company": "Vercel",
+          "role": "Desenvolvedor Full-Stack",
+          "company": "FCamara",
           "companyColor": "text-tn-blue",
-          "period": "2022 — Present",
-          "description": "Liderando desenvolvimento de ferramentas internas e funcionalidades de experiência do desenvolvedor. Arquitetou o novo pipeline de deployment reduzindo tempos de build em 40%. Mentoreou engenheiros júnior.",
-          "tech": ["TypeScript", "Next.js", "Go", "AWS"]
+          "period": "2025 — 2026",
+          "description": "Trabalhei juntamente a um grande cliente do setor de saúde, desenvolvendo soluções para um projeto de controle de estoque e rastreabilidade que tem gerado impactos positivos, como redução de custos e redução da perda de ativos. ",
+          "tech": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Fastify",
+            "SQL Server",
+            "AWS"
+          ]
+        },
+        {
+          "role": "[Trainee] Desenvolvedor Full-Stack",
+          "company": "FCamara",
+          "companyColor": "text-tn-purple",
+          "period": "2024 — 2025",
+          "description": "Estudos e treinamentos sobre skills relevantes para a carreira. Desenvolvimento full-stack para um cliente do setor de saúde.",
+          "tech": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Fastify",
+            "SQL Server",
+            "AWS"
+          ]
         },
         {
           "role": "Desenvolvedor Full-Stack",
-          "company": "Stripe",
-          "companyColor": "text-tn-purple",
-          "period": "2020 — 2022",
-          "description": "Construiu e manteve interfaces de processamento de pagamentos processando milhões de transações. Projetou o framework de tratamento de erros adotado por 12 equipes.",
-          "tech": ["React", "Ruby", "GraphQL", "Kafka"]
-        },
-        {
-          "role": "Estagiário de Engenharia de Software",
-          "company": "GitHub",
+          "company": "Canuto Dev",
           "companyColor": "text-tn-cyan",
-          "period": "2019 — 2020",
-          "description": "Contribuiu para o editor de workflows do Actions. Entregou uma funcionalidade de validação de sintaxe que reduziu relatórios de erros em 25%. Escreveu testes de integração completos.",
-          "tech": ["TypeScript", "React", "Jest"]
+          "period": "2021 — 2023",
+          "description": "Desenvolvimento e planejamento de novas funcionalidades, melhorias no código e correção de bugs no sistema de uma seguradora.",
+          "tech": ["Vue", "Vuetify", ".NET", "C#", "MongoDB"]
         }
       ]
     },
@@ -36,19 +50,19 @@
       "title": "Formação Acadêmica",
       "items": [
         {
-          "degree": "M.Sc. Ciência da Computação",
-          "school": "Stanford University",
+          "degree": "MBA Rocketseat Full-Stack",
+          "school": "Rocketseat/Sirius",
           "schoolColor": "text-tn-orange",
-          "period": "2018 — 2020",
-          "description": "Focado em sistemas distribuídos e interação humano-computador. Tese sobre algoritmos de edição colaborativa em tempo real. CR: 3.9/4.0.",
+          "period": "2024 — 2025",
+          "description": "Desenvolvimento full-stack, focado no ecossistema React/Node.js, clean architecture, princípios SOLID e Domain Driven Design.",
           "tech": []
         },
         {
-          "degree": "B.S. Engenharia de Computação",
-          "school": "UC Berkeley",
+          "degree": "Sistemas de Informação",
+          "school": "UNASP",
           "schoolColor": "text-tn-green",
-          "period": "2014 — 2018",
-          "description": "Focado em arquitetura de computadores e engenharia de software. Projeto de formatura sobre sistemas de build distribuídos. CR: 3.8/4.0.",
+          "period": "2019 — 2023",
+          "description": "Foco em arquitetura, engenharia, ciclo de vida e desenvolvimento de softwares.",
           "tech": []
         }
       ]
@@ -58,9 +72,14 @@
       "subtitle": "Aprendizado Contínuo",
       "color": "text-tn-teal",
       "items": [
-        { "name": "AWS Solutions Architect – Professional", "iconColor": "text-tn-orange" },
-        { "name": "Certified Kubernetes Administrator (CKA)", "iconColor": "text-tn-blue" },
-        { "name": "Google Professional Cloud Developer", "iconColor": "text-tn-purple" }
+        {
+          "name": "Introdução à AWS - Rocketseat",
+          "iconColor": "text-tn-orange"
+        },
+        {
+          "name": "Engenharia de Prompt - Rocketseat",
+          "iconColor": "text-tn-blue"
+        }
       ]
     }
   }
