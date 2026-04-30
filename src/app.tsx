@@ -1,9 +1,11 @@
 import './app.css'
+import { Career } from './components/career'
+import { Contact } from './components/contact'
+import { Footer } from './components/footer'
 import { Hero } from './components/hero'
 import { Navbar } from './components/navbar'
 import { Projects } from './components/projects'
 import { Skills } from './components/skills'
-import { Career } from './components/career'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Skills />
       <Projects />
       <Career />
+      <Contact />
+      <Footer />
     </div>
   )
 }

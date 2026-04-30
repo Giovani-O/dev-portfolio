@@ -1,0 +1,22 @@
+{
+  "contact": {
+    "label": "contato",
+    "title": "Vamos Construir",
+    "titleAccent": "Algo Juntos",
+    "subtitle": "Estou sempre aberto a conversas interessantes, novas oportunidades e projetos colaborativos. Entre em contato.",
+    "socials": {
+      "github": {
+        "label": "GitHub",
+        "url": "https://github.com/your-username"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/your-username"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "Desenvolvido com cuidado — © 2026",
+    "status": "Todos os sistemas funcionando"
+  }
+}
