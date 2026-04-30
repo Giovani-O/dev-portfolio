@@ -1,18 +1,18 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
+import enCareer from '../locales/en/career.json'
 import enCommon from '../locales/en/common.json'
+import enContact from '../locales/en/contact.json'
 import enHero from '../locales/en/hero.json'
 import enProjects from '../locales/en/projects.json'
 import enSkills from '../locales/en/skills.json'
+import ptCareer from '../locales/pt/career.json'
 import ptCommon from '../locales/pt/common.json'
+import ptContact from '../locales/pt/contact.json'
 import ptHero from '../locales/pt/hero.json'
 import ptProjects from '../locales/pt/projects.json'
 import ptSkills from '../locales/pt/skills.json'
-import enCareer from '../locales/en/career.json'
-import ptCareer from '../locales/pt/career.json'
-import enContact from '../locales/en/contact.json'
-import ptContact from '../locales/pt/contact.json'
 
 function getInitialLanguage(): string {
   const stored = localStorage.getItem('@dev-portfolio-lang')
@@ -24,8 +24,26 @@ function getInitialLanguage(): string {
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: { translation: { ...enCommon, ...enHero, ...enSkills, ...enProjects, ...enCareer, ...enContact } },
-    pt: { translation: { ...ptCommon, ...ptHero, ...ptSkills, ...ptProjects, ...ptCareer, ...ptContact } },
+    en: {
+      translation: {
+        ...enCommon,
+        ...enHero,
+        ...enSkills,
+        ...enProjects,
+        ...enCareer,
+        ...enContact,
+      },
+    },
+    pt: {
+      translation: {
+        ...ptCommon,
+        ...ptHero,
+        ...ptSkills,
+        ...ptProjects,
+        ...ptCareer,
+        ...ptContact,
+      },
+    },
   },
   lng: getInitialLanguage(),
   fallbackLng: 'en',
