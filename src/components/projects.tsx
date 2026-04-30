@@ -3,7 +3,6 @@ import { HugeiconsIcon } from '@hugeicons/react'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
-
 const techColors = [
   'text-tn-cyan bg-tn-cyan/10 border-tn-cyan/20',
   'text-tn-green bg-tn-green/10 border-tn-green/20',
@@ -175,6 +174,8 @@ export function Projects() {
                       {hasDemo && (
                         <a
                           href={project.demoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center gap-1.5 text-sm font-medium text-tn-blue hover:underline"
                         >
                           {isFeatured
@@ -193,6 +194,8 @@ export function Projects() {
                       )}*/}
                       <a
                         href={project.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-sm font-medium text-tn-textMuted hover:text-tn-text transition-colors"
                       >
                         <HugeiconsIcon icon={GithubIcon} size={14} />

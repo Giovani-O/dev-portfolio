@@ -65,7 +65,7 @@ export function Hero() {
 
           <div className="animate-fade-in-up-d4 flex items-center gap-5">
             <a
-              href="https://github.com"
+              href="https://github.com/Giovani-O"
               target="_blank"
               rel="noopener noreferrer"
               className="text-tn-textMuted hover:text-tn-blue transition-colors"
@@ -74,7 +74,7 @@ export function Hero() {
               <HugeiconsIcon icon={GithubIcon} size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/giovani-o/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-tn-textMuted hover:text-tn-blue transition-colors"
