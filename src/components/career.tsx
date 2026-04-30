@@ -1,7 +1,7 @@
 import {
   Briefcase01Icon,
-  GraduationScrollIcon,
   Certificate01Icon,
+  GraduationScrollIcon,
 } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import { useTranslation } from 'react-i18next'
@@ -187,9 +187,7 @@ export function Career() {
                 <div
                   className={`absolute -left-8 top-1.5 w-[23px] h-[23px] rounded-full border-2 ${certData.color} bg-tn-bg flex items-center justify-center`}
                 >
-                  <div
-                    className={`w-2 h-2 rounded-full ${certData.color.replace('text-', 'bg-')}`}
-                  />
+                  <div className="w-2 h-2 rounded-full bg-tn-teal" />
                 </div>
                 <div className="card-hover bg-tn-surface/40 border border-tn-border rounded-xl p-5">
                   <div className="flex items-start justify-between gap-2 mb-3">
