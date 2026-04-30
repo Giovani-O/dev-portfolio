@@ -1,0 +1,22 @@
+{
+  "contact": {
+    "label": "contact",
+    "title": "Let's Build",
+    "titleAccent": "Something Together",
+    "subtitle": "I'm always open to interesting conversations, new opportunities, and collaborative projects. Drop me a line.",
+    "socials": {
+      "github": {
+        "label": "GitHub",
+        "url": "https://github.com/your-username"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/your-username"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "Designed & built with care — © 2026",
+    "status": "All systems operational"
+  }
+}
