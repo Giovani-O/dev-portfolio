@@ -41,14 +41,14 @@ export function Projects() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-tn-surface/20 to-transparent pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-6">
-        <div className="scroll-reveal mb-16">
+        <div className="scroll-reveal mb-16 text-center">
           <span className="inline-block text-xs font-mono text-tn-purple uppercase tracking-[0.2em] mb-3 px-3 py-1 rounded-full border border-tn-purple/20 bg-tn-purple/5">
             &lt;{t('projects.label')}&gt;
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-left">
+          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-center">
             {t('projects.title')}
           </h2>
-          <p className="text-tn-textMuted max-w-lg text-left">
+          <p className="text-tn-textMuted max-w-lg text-center mx-auto">
             {t('projects.subtitle')}
           </p>
         </div>
